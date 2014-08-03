@@ -1,0 +1,1 @@
+angular.module('frog').controller('module1');
