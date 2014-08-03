@@ -13,6 +13,9 @@ module.exports = function(grunt) {
             }
         },
         ng_boba: {
+            options: {
+                module: 'jModule'
+            },
             build: {
                 src: 'src/frog/**/*.js',
                 dest: 'build/frog.min.js'
