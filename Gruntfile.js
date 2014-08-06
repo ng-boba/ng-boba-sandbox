@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        ng_boba: {
+        ngBoba: {
             options: {
                 modules: ['frog']
             },
@@ -17,6 +17,6 @@ module.exports = function(grunt) {
 
 
     // Default task(s).
-    grunt.registerTask('default', ['ng_boba']);
+    grunt.registerTask('default', ['ngBoba']);
 
 };
