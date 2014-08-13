@@ -4,7 +4,8 @@ module.exports = function(grunt) {
     grunt.initConfig({
         ngBoba: {
             options: {
-                modules: ['frog']
+                modules: ['frog'],
+                moduleFormat: "anonymous"
             },
             build: {
                 src: 'src/frog/**/*.js',
