@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
 
-    // Project configuration.
+    /**
+     * Sample ngBoba project configuration using concat
+     */
     grunt.initConfig({
         ngBoba: {
             options: {
@@ -8,16 +10,20 @@ module.exports = function(grunt) {
                 moduleFormat: "anonymous"
             },
             build: {
-                src: 'src/frog/**/*.js',
-                dest: 'build/frog.min.js'
+              src: 'src/frog/**/*.js'
             }
+        },
+        concat: {
+          build: {
+            src: '<%= ngBoba.output.files %>',
+            dest: 'build/frog.concat.js'
+          }
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-ng-boba');
 
-
     // Default task(s).
-    grunt.registerTask('default', ['ngBoba']);
-
+    grunt.registerTask('default', ['ngBoba', 'concat']);
 };

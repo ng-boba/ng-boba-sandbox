@@ -1,11 +1,12 @@
 {
-  "dependencies": {},
   "name": "ng-boba-sandbox",
-    "description": "ng-boba-sandbox",
+  "description": "ng-boba-sandbox",
   "version": "0.0.0",
   "main": "index.js",
-  "devDependencies": {
-    "grunt": "^0.4.5"
+  "dependencies": {
+    "ng-boba": "ng-boba/ng-boba",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
