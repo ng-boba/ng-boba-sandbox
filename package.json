@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "main": "index.js",
   "dependencies": {
-    "ng-boba": "ng-boba/ng-boba",
+    "grunt-ng-boba": "ng-boba/grunt-ng-boba",
     "grunt": "^0.4.5",
     "grunt-contrib-concat": "*"
   },
