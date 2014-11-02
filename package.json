@@ -6,11 +6,12 @@
   "dependencies": {
     "grunt-ng-boba": "ng-boba/grunt-ng-boba",
     "grunt": "^0.4.5",
-    "grunt-contrib-concat": "*"
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-watch": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jessica Vreeland",
-  "license": "ISC"
+  "license": "MIT"
 }
