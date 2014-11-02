@@ -7,7 +7,10 @@ module.exports = function(grunt) {
     ngBoba: {
       options: {
         modules: ['frog'],
-        moduleFormat: 'anonymous'
+        moduleFormat: 'anonymous',
+        dependencies: [
+          'lib/angular-1.3.0.js'
+        ]
       },
       build: {
         options: {
