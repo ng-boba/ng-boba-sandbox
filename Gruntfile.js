@@ -6,7 +6,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
     ngBoba: {
       options: {
-        modules: ['frog'],
         moduleFormat: 'anonymous',
         dependencies: [
           'lib/angular-1.3.0.js'
@@ -14,6 +13,7 @@ module.exports = function(grunt) {
       },
       build: {
         options: {
+         modules: ['frog'],
           /**
            * Let's generate the dependency JSON so we can use infuser.
            */
