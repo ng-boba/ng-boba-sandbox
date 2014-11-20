@@ -1,4 +1,4 @@
 Build folder
-======
+===================================
 
-This is where the compiled assets live in the sandbox project.
+When you run the build step for the project, the compiled assets will be generated in this folder.

@@ -1,42 +1,73 @@
 module.exports = function(grunt) {
 
   /**
-   * Sample ngBoba project configuration with concat and watch support
+   * ngBoba seed project configuration with concat and watch support
    */
   grunt.initConfig({
+
+    /**
+     * We need to configure boba for each of the modules in our
+     * project.
+     */
     ngBoba: {
       options: {
         moduleFormat: 'anonymous',
+        /**
+         * If we enable verbose messages, boba will try to help us sort out
+         * our project configuration errors. You can also specify the --debug
+         * flag to activate verbose messages.
+         */
+        verbose: true,
         dependencies: [
           'lib/angular-1.3.0.js'
         ]
       },
-      build: {
+      buildApp: {
         options: {
-         modules: ['frog'],
+          modules: ['app'],
+
           /**
-           * Let's generate the dependency JSON so we can use infuser.
+           * Let's generate the dependency JSON so we can use infuser. If we don't want to use
+           * the infuser, then we can skip this output step.
            */
-          output: 'build/frog.build.json'
+          output: 'build/app.boba.json'
         },
-        src: ['src/frog/**/*.js']
+        src: ['src/app/**/*.js']
+      },
+      buildWebsite: {
+        options: {
+          modules: ['website'],
+          output: 'build/website.boba.json'
+        },
+        src: ['src/website/**/*.js']
       }
     },
+
+    /**
+     * Let's use the grunt concat task to create an
+     * aggregated file for each of our modules.
+     */
     concat: {
-      build: {
-        /**
-         * Let's create a build file too.
-         */
-        src: '<%= ngBoba.build.output.files %>',
-        dest: 'build/frog.concat.js'
+      buildApp: {
+        src: '<%= ngBoba.buildApp.output.files %>',
+        dest: 'build/app.concat.js'
+      },
+      buildWebsite: {
+        src: '<%= ngBoba.buildWebsite.output.files %>',
+        dest: 'build/website.concat.js'
       }
     },
+
+    /**
+     * General watch command watches all javascript source files
+     * and rebuilds all the components.
+     */
     watch: {
       options: {
         atBegin: true
       },
       build: {
-        files: ['src/frog/**/*.js'],
+        files: ['src/**/*.js'],
         tasks: ['ngBoba', 'concat']
       }
     }
