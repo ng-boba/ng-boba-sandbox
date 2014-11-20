@@ -1,6 +1,6 @@
 ngBoba Seed
 ===================================
-> Angular Dependency Manager Seed Project
+> Seed project using ngBoba: Angular Dependency Manager
 
 This project is a sample application for a basic ngBoba project.
 You can use it to quickly bootstrap your AngularJS webapp project
@@ -9,7 +9,7 @@ with ngBoba support for production and development.
 ## Getting Started
 To get started you can clone the ngboba-seed repository and install the dependencies.
 
-# Contact & Thanks
+## Contact & Thanks
 For more information about ngBoba please check out [ngBoba.](http://ng-boba.github.io/)
 
 You'll notice a similarity between this documentation and the [angular-seed](https://github.com/angular/angular-seed)
