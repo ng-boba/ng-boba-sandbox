@@ -16,4 +16,4 @@ You'll notice a similarity between this documentation and the [angular-seed](htt
 project. That's because the format and wording was lifted heavily
 from that project's documentation. Thanks guys!
 
-<3 angular & angular-seed
+We <3 angular & angular-seed.
