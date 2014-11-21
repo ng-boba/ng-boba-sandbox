@@ -37,11 +37,14 @@ going to work...
 npm start
 ```
 
-Now visit the server in your web browser of choice at: http://localhost:8000
+Visit the server in your web browser of choice at: http://localhost:8000
 
-### Explore the seed application
-Now you'll have to explore the project and see if ngBoba is right for you. Open the developer tools and watch
-the seed project's dependencies get included on the fly.
+### Explore the application
+Now it's up to you to explore the project and see if ngBoba is right for your needs. Open the developer tools and watch
+the seed project's dependencies get included on the fly. Click through the available links and watch how the
+dependencies are loaded differently.
+
+Enjoy ngBoba!
 
 ## Contact & Thanks
 For more information about ngBoba please check out [ngBoba.](http://ng-boba.github.io/)
