@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
   <title> ngBoba Seed: App Module</title>
 </head>
-<body ng-app="app">
+<body ng-controller="HomeController">
 
   <h1>App Module</h1>
   <p>
     Open developer tools to the network tab and reload the page.
+    <a href="index.html">Try the same thing on the website!</a>
   </p>
+
+  <h2>Generated ngBoba configuration</h2>
+  <iframe attention="red" width="450" height="180" src="build/app.boba.json"></iframe>
 
   <script src="node_modules/grunt-ng-boba/node_modules/ng-boba/samples/ng-boba-infuser.js"
           data-ng-boba="build/app.boba.json"

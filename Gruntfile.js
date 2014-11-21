@@ -32,14 +32,14 @@ module.exports = function(grunt) {
            */
           output: 'build/app.boba.json'
         },
-        src: ['src/app/**/*.js']
+        src: ['src/**/*.js']
       },
       buildWebsite: {
         options: {
           modules: ['website'],
           output: 'build/website.boba.json'
         },
-        src: ['src/website/**/*.js']
+        src: ['src/**/*.js']
       }
     },
 
