@@ -20,21 +20,14 @@ cd ng-boba-seed
 npm install
 ```
 
-### Install grunt-cli globally
-If you don't have the grunt-cli package installed, you should install it now. If you have already installed it in the
-past, you can skip this step.
-```shell
-npm install grunt-cli
-```
-
 ### Run ngBoba
-Before we fire up the server, we need to tell ngBoba to create our module configurations.
+Before we fire up the server, we need to tell ngBoba to create our module configurations & bundles.
 ```shell
 grunt
 ```
 
 ### Start the server
-We're using the default python server to launch the sample app. If you don't have python installed, this isn't
+We're using the python SimpleHTTPServer to launch the sample app. If you don't have python installed, this isn't
 going to work...
 ```shell
 npm start
