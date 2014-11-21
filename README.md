@@ -10,11 +10,13 @@ support for production and development.
 To get started you can clone the ng-boba-seed repository and install the dependencies.
 
 ### Clone the repo
+
 ```shell
 git clone https://github.com/ng-boba/ng-boba-seed.git
 ```
 
 ### Install dependencies
+
 ```shell
 cd ng-boba-seed
 npm install
@@ -22,6 +24,7 @@ npm install
 
 ### Run ngBoba
 Before we fire up the server, we need to tell ngBoba to create our module configurations & bundles.
+
 ```shell
 grunt
 ```
@@ -29,9 +32,12 @@ grunt
 ### Start the server
 We're using the python SimpleHTTPServer to launch the sample app. If you don't have python installed, this isn't
 going to work...
+
 ```shell
 npm start
 ```
+
+Now visit the server in your web browser of choice at: http://localhost:8000
 
 ### Explore the seed application
 Now you'll have to explore the project and see if ngBoba is right for you. Open the developer tools and watch
