@@ -12,12 +12,18 @@ module.exports = function(grunt) {
     ngBoba: {
       options: {
         moduleFormat: 'anonymous',
+
         /**
          * If we enable verbose messages, boba will try to help us sort out
          * our project configuration errors. You can also specify the --debug
          * flag to activate verbose messages.
          */
         verbose: true,
+
+        /**
+         * Dependencies are additional files to include outside of our project scope. They are included
+         * before your project files. Make sure you include Angular otherwise things just won't work!
+         */
         dependencies: [
           'lib/angular-1.3.0.js'
         ]
